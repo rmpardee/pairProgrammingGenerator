@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<title>Pair Programming Generator</title>
+	<link rel="stylesheet" type="text/css" href="ruthStyling.css">
 </head>
 <body>
+	<div class="ourContent">
 	<h1>Pair Programming Generator</h1>
 	<table>
 		<thead>
@@ -15,10 +18,14 @@
 		</tbody>
 	</table>
 
+	<div class="refreshButton">
+		<button class="button" id="save" onClick="history.go(0)">I'd like a different partner please!</button>
+	</div>
+	
 	<script type="text/javascript">
 		(function(){
 
-			var students = ["Beth Taylor", "Karen Wong", "Cat Liaw", "Bommy Cha", "Clarissa Chin", "Sandra You", "Tatiana Aroca", "Mina Yoon", "Krisha Nalavadi", "E'yonnie Scott", "Shannon Anahata", "Maggie Yang", "Ashley Chang", "Arushi Jaiswal", "Betty Chou", "Tira McDonald", "Ruth Pardee", "Sara LeFort", "Gunjan Amarnani"];
+			var students = ["Beth Taylor", "Karen Wong", "Cat Liaw", "Bommy Cha", "Clarissa Chin", "Sandra You", "Tatiana Aroca", "Minna Yoon", "Krisha Nalavadi", "E'yonnie Scott", "Shannon Anahata", "Maggie Yang", "Ashley Chang", "Arushi Jaiswal", "Betty Chou", "Tira McDonald", "Ruth M. Pardee", "Sara LeFort", "Gunjan Amarnani"];
 			console.log("students: ", students);
 			//Source: http://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
 			var studentArrayLength = students.length;
@@ -45,7 +52,8 @@
 		})();
 
 		
-		
+	
 	</script>
+	</div>
 </body>
 </html>
